@@ -93,7 +93,7 @@ nav{
 	background: #d7d4ed;
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -26rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -101,4 +101,26 @@ nav{
 	z-index: 1500;
 	transition: all 650ms ease-in-out;
 }
+
+
+.nav-lista.activa {
+	right: 0;
+}
+
+.cerrar {
+	position: absolute;
+	top: 1rem;
+	left: 1.5rem;
+}
+
+.nav-item{
+	margin: 1.5rem 0;
+}
+
+.nav-link {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: rgba(0,0,0,.7);
+}
+
 
