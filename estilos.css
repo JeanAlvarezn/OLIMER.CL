@@ -37,18 +37,13 @@ section {
 }
 
 
-body {
-	background:#FFFF; ;
-}
-
-
 header {
 	width: 100%;
 	height: 5rem;
-	/*position: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;*/
+	z-index: 1;
 }
 
 .container {
@@ -74,7 +69,7 @@ nav {
 
 .menu-icons i {
 	font-size: 2.5rem;
-	color: #0B1E51;
+	color: #F2F0F0;
 	cursor: pointer;
 }
 
@@ -122,8 +117,57 @@ nav {
 .hero {
 	width: 100%;
 	height: 80vh;
-	background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%) , url('imagenes/imagenMotor.jpg') center no-repeat;
+	background: linear-gradient(135deg, rgba(52, 73, 94,0.9) 0%, rgba(44, 62, 80,0.8) 100%) , url('imagenes/imagenMotor.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/*.hero::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4.7rem;
+	background: url('imagenes/wave-small.png') center no-repeat;
+	background-size: cover;
+}*/
+
+.main-message {
+	width: 100%;
+	max-width: 50rem;
+	color: #fafafa;
+	text-transform: uppercase;
+	transform: translateY(20%);
 }
 
 
+.main-message h3 {
+	font-size: 1.6rem;
+}
+
+.main-message h1 {
+	font-family: 'Aldrich' , sans-serif;
+	font-size: 4rem;
+	margin: 1rem 0;
+}
+
+.main-message p {
+	text-transform: lowercase;
+}
+
+.btn {
+	background-color:#0B1E51;
+	border-radius: 2rem;
+	color: #fafafa;
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem 2.5rem;
+	text-transform: uppercase;
+	transition: background-color 650ms;
+}
+
+.btn:hover {
+	background-color: #007ACC;
+}
 
