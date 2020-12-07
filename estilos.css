@@ -161,6 +161,10 @@ nav {
 	color: #191717;
 }
 
+#nuestra-vision{
+	margin-top: -80px;
+}
+
 .titulo-cabeza h1 {
 	font-size: 3.4rem;
 	font-family: 'Aldrich' , sans-serif;
@@ -199,8 +203,16 @@ nav {
 
 }
 
-.tuerca {
-	background: url('imagenes/motor.jpg') center no-repeat;
+.inyeccion {
+	background: url('imagenes/maquinaInyeccion.jpg') center no-repeat;
+}
+
+.inyeccion2 {
+	background: url('imagenes/maquinaInyeccion02.jpg') center no-repeat;
+}
+
+.inyeccion3{
+	background: url('imagenes/maquinaInyeccion3.jpg') center no-repeat;
 }
 
 
@@ -278,6 +290,18 @@ footer {
 	background-color: #2C2B2B;
 	text-align: center;
 	color: #fafafa;
+}
+
+.contacto-icono {
+	font-size: 2.3rem;
+	margin-right: 12px;
+	margin-bottom: 20px;
+}
+
+
+.separador-titulos {
+	margin-top: 20px;
+	opacity: 0.5;
 }
 
 @media screen and (min-width: 350px) {
@@ -360,7 +384,7 @@ footer {
 	}
 
 	.titulo-cabeza h1 {
-		font-size: 2.5rem;
+		font-size: 3.5rem;
 	}
 
 }
