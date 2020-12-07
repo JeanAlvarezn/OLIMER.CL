@@ -27,8 +27,8 @@ p {
 }
 
 img {
-	width: 100%;
-	max-width: 100%;
+	width: 650%;
+	max-width: 650%;
 	height: auto;
 }
 
@@ -86,7 +86,7 @@ nav {
 .nav-list {
 	width: 25rem;
 	height: 100vh;
-	background: #D5CFCF;
+	background: #2C2B2B;
 	position: fixed;
 	top: 0;
 	right: -26rem;
@@ -111,27 +111,17 @@ nav {
 .nav-link {
 	font-size: 1.6rem;
 	text-transform: uppercase;
-	color: rgba(0,0,0,.7);
+	color: #fafafa;
 }
 
 .hero {
 	width: 100%;
-	height: 80vh;
+	height: 55vh;
 	background: linear-gradient(135deg, rgba(52, 73, 94,0.9) 0%, rgba(44, 62, 80,0.8) 100%) , url('imagenes/imagenMotor.jpg') center no-repeat;
 	background-size: cover;
 	position: relative;
 }
 
-/*.hero::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 4.7rem;
-	background: url('imagenes/wave-small.png') center no-repeat;
-	background-size: cover;
-}*/
 
 .main-message {
 	width: 100%;
@@ -143,7 +133,7 @@ nav {
 
 
 .main-message h3 {
-	font-size: 1.6rem;
+	font-size: 2.6rem;
 }
 
 .main-message h1 {
@@ -156,18 +146,240 @@ nav {
 	text-transform: lowercase;
 }
 
-.btn {
-	background-color:#0B1E51;
-	border-radius: 2rem;
-	color: #fafafa;
-	display: inline-block;
-	margin-top: 2rem;
-	padding: 1rem 2.5rem;
-	text-transform: uppercase;
-	transition: background-color 650ms;
+
+
+.especialidades {
+	padding: 0;
+
 }
 
-.btn:hover {
-	background-color: #007ACC;
+.titulo-cabeza {
+	text-align: center;
+	text-transform: uppercase;;
+	margin-bottom: 10rem;
+	margin-top: 5rem;
+	color: rgba(0,0,0,.7);
 }
+
+.titulo-cabeza h1 {
+	font-size: 2.4rem;
+	font-family: 'Aldrich' , sans-serif;
+	margin : .5rem 0 1rem;
+}
+
+
+.titulo-cabeza p {
+	text-transform: lowercase;
+}
+
+.especialidades-grilla {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+	grid-gap: 2.5rem;
+
+}
+
+.especialidades-grilla-item {
+	height: 40rem;
+	padding: 5rem;
+	color: #fafafa;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.especialidades-grilla-item::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(52, 73, 94,0.9) 0%, rgba(44, 62, 80,0.8) 100%);
+	z-index: -1;
+
+}
+
+.tuerca {
+	background: url('imagenes/motor.jpg') center no-repeat;
+}
+
+
+.especialidades-grilla-item h1 {
+	font-family: 'Aldrich' , sans-serif;
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	margin: 2rem 0;
+}
+
+
+.opiniones {
+	margin-top: 20px;
+	width: 100%;
+	height: 80vh;
+	background-size: cover;
+	position: relative;
+	background: linear-gradient(135deg, rgba(52, 73, 94,0.9) 0%, rgba(44, 62, 80,0.8) 100%) , url('imagenes/imagenMotor.jpg') center no-repeat fixed;
+
+}
+
+.opinion {
+	width: 100%;
+	color: #fafafa;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.opinion-text-box {
+	padding: 0 1.5rem;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.opinion-text-box i{
+	position: absolute;
+	top: -8rem;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 8rem;
+	color: #0B1E51;
+	opacity: .5;
+	z-index: -1;
+
+}
+
+
+.opinion-cliente img {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 100%;
+	border: 3px solid#0B1E51;
+}
+
+.detalles-grilla {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	grid-gap: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+.detalles-grilla-item p {
+	color: rgba(0,0,0,.7);
+}
+
+
+
+footer {
+	padding: 2.5rem 0;
+	background-color: #2C2B2B;
+	text-align: center;
+	color: #fafafa;
+}
+
+@media screen and (min-width: 350px) {
+	.main-message {
+		transform: translateY(40%);
+	}
+}
+
+@media screen and(min-width: 470px) {
+	.hero::before ,
+	.opiniones:before {
+		height: 9.4rem;
+	}
+}
+
+
+
+@media screen and (min-width: 700px) {
+	header {
+		height: 8rem;
+	}
+
+	.nav-list {
+		width: initial;
+		height: initial;
+		background-color: transparent;
+		position: initial;
+		top: initial;
+		right: initial;
+		display: flex;
+		flex-direction: row;
+		transition: initial;
+	}
+
+
+	.menu-icons {
+		display: none;
+	}
+
+	.nav-item {
+		margin: 0 2.5rem;
+
+	}
+
+	.nav-link ,
+	.current{
+		color: #fafafa;
+		position: relative;
+		font-size: 1.3rem;
+	}
+
+	.nav-link::before ,
+	.current::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -.5rem;
+		background-color: #007ACC;
+		width: 100%;
+		height: 2px;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 650ms; 
+	}
+
+	.current::before {
+		transform: scaleX(1);
+	}
+
+	.nav-link:hover::before {
+		transition: scaleX(1);
+	}
+
+	.hero {
+		height: 60vh;
+	}
+
+	.main-message {
+		transform: translateY(70%);
+	}
+
+	.titulo-cabeza h1 {
+		font-size: 2.5rem;
+	}
+
+}
+
+@media screen and (min-width: 950px) {
+	.hero::before ,
+	.opiniones:before {
+		height: 22.7rem;
+	}
+
+}
+
+@media screen and (min-width: 120px) {
+	.hero {
+		height: 75vh;
+
+	}
+}
+
 
