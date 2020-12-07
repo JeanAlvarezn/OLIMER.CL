@@ -1,11 +1,9 @@
-//funcion que selecciona los elementos
 const selectElement = (s) => document.querySelector(s);
-//abrir el menu cuando hacemos click
-selectElement(s:'.abrir').addEventListener('click' , () => {
-	selectElement(s: '.nav-lista').classList.add('activa');
+
+selectElement('.open').addEventListener('click' , () => {
+	selectElement('.nav-list').classList.add('active');
 });
 
-//cerrar el menu cuando hacemos click
-selectElement(s:'.cerrar').addEventListener('click' , () => {
-	selectElement(s: '.nav-lista').classList.remove(tokens:'activa');
+selectElement('.close').addEventListener('click' , () => {
+	selectElement('.nav-list').classList.remove('active');
 });

@@ -1,11 +1,9 @@
-/*estilos globales*/
-
 *,
 *::before,
-*::after{
+*::after {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
 }
 
 
@@ -19,15 +17,14 @@ a {
 	text-decoration: none;
 }
 
-
 ul {
 	list-style: none;
 }
 
+
 p {
 	font-size: 1.6rem;
 }
-
 
 img {
 	width: 100%;
@@ -39,12 +36,11 @@ section {
 	padding: 5rem 0;
 }
 
+
 body {
-	background: cornflowerblue;
+	background:#FFFF; ;
 }
 
-
-/*Cabecera(header)*/
 
 header {
 	width: 100%;
@@ -55,14 +51,14 @@ header {
 	z-index: 1;*/
 }
 
-.contenedor{
+.container {
 	width: 100%;
 	max-width: 98rem;
 	margin: 0 auto;
 	padding: 0 1.5rem;
 }
 
-nav{
+nav {
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -72,25 +68,30 @@ nav{
 
 }
 
-
-.nav-marca{
-	width:2rem;
+.nav-brand {
+	width: 2rem;
 }
 
-.menu-iconos i {
-	font-size: 3.5rem;
-	color: #fafafa;
+.menu-icons i {
+	font-size: 2.5rem;
+	color: #0B1E51;
 	cursor: pointer;
 }
 
-.cerrar i {
-	color: #eb648c;
+.close i {
+	color:#F04242;
 }
 
-.nav-lista {
+.nav-list.active {
+	right: 0;
+	
+}
+
+
+.nav-list {
 	width: 25rem;
 	height: 100vh;
-	background: #d7d4ed;
+	background: #D5CFCF;
 	position: fixed;
 	top: 0;
 	right: -26rem;
@@ -102,18 +103,13 @@ nav{
 	transition: all 650ms ease-in-out;
 }
 
-
-.nav-lista.activa {
-	right: 0;
-}
-
-.cerrar {
+.close {
 	position: absolute;
 	top: 1rem;
 	left: 1.5rem;
 }
 
-.nav-item{
+.nav-item {
 	margin: 1.5rem 0;
 }
 
@@ -123,10 +119,5 @@ nav{
 	color: rgba(0,0,0,.7);
 }
 
-/*hero*/ 
-
-.hero {
-	
-}
 
 
