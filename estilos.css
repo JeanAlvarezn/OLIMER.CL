@@ -242,6 +242,7 @@ nav {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+	
 }
 
 .opinion-text-box {
@@ -295,9 +296,8 @@ footer {
 .contacto-icono {
 	font-size: 2.3rem;
 	margin-right: 12px;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
-
 
 .separador-titulos {
 	margin-top: 20px;
