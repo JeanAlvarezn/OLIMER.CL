@@ -310,6 +310,15 @@ footer {
 	opacity: 0.5;
 }
 
+.listado-cascada {
+	list-style-type: square;
+	margin-top: 20px;
+}
+
+.listado-cascada li {
+	margin-top: 25px;
+}
+
 @media screen and (min-width: 350px) {
 	.main-message {
 		transform: translateY(40%);
