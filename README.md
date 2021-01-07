@@ -1,4 +1,6 @@
-# OLIMER.CL
-Repositorio para el sitio de olimer
-Este es el sitio que realicé para la empresa en la cual trabajo.
-El link para entrar al sitio en cuestión es el siguiente: https://olimer.cl
+# Olimer .cl | Jean Alvarez
+
+olimer .cl es la pagina que construí para la empresa del mismo nombre, en la cual tambien trabajé. La adjunto como parte de mi portafolio de proyectos.
+
+# El sitio en cuestión: https://olimer.cl
+
